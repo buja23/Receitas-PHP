@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "titulo": "Bolo de Chocolate",
+    "thumbnail": "https://via.placeholder.com/150/FFC0CB/000000?Text=Bolo",
+    "tags": ["bolo", "chocolate", "doce"],
+    "tempo": "45 min"
+  },
+  {
+    "id": 2,
+    "titulo": "Lasanha à Bolonhesa",
+    "thumbnail": "https://via.placeholder.com/150/90EE90/000000?Text=Lasanha",
+    "tags": ["massa", "carne", "salgado"],
+    "tempo": "90 min"
+  },
+  {
+    "id": 3,
+    "titulo": "Salada Caesar",
+    "thumbnail": "https://via.placeholder.com/150/ADD8E6/000000?Text=Salada",
+    "tags": ["salada", "leve", "saudável"],
+    "tempo": "20 min"
+  }
+]
