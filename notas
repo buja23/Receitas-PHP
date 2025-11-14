@@ -1,0 +1,11 @@
+
+pesquisa no php.net
+
+pequisei um jeito melhor de tratar a string de busca
+e achei essa função que não conhecia
+
+
+strtolower(trim)
+
+função que procura a 1 ocorrencia da STRING no caso $Busca
+strpos
