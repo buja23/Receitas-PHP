@@ -1,0 +1,122 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #343638;
+
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #c2c2c2;
+}
+
+.form-search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.form-search input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.form-search button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #0d588a;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.form-search button:hover {
+    background-color: #2980b9;
+}
+
+
+.receitas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+
+.receita-card {
+    background-color: #263852;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.receita-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.receita-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.receita-card-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; 
+}
+
+.receita-card-content h2 {
+    font-size: 1.25rem;
+    margin: 0 0 10px 0; 
+}
+
+.receita-card-content .tags {
+    margin-bottom: 10px;
+}
+
+.receita-card-content .tags span {
+    background-color: #e9ecef;
+    color: #495057;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    margin-right: 5px;
+    display: inline-block; 
+    margin-bottom: 5px;
+}
+
+.receita-card-content .tempo-preparo {
+    margin-top: auto; 
+    font-weight: bold;
+    color: white;
+}
+
+/* celulares */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .form-search {
+        flex-direction: column;
+    }
+}
