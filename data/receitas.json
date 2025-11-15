@@ -3,21 +3,62 @@
     "id": 1,
     "titulo": "Bolo de Chocolate",
     "thumbnail": "assets/img/bolo.jpg",
+    "descricao": "Um bolo de chocolate fofinho e delicioso, perfeito para o café da tarde.",
     "tags": ["bolo", "chocolate", "doce"],
-    "tempo": "45 min"
+    "resumo": {
+      "tempo": "45 min",
+      "pessoas": "8 porções",
+      "nivel": "Fácil"
+    },
+    "ingredientes": ["Farinha", "Açúcar", "Chocolate em Pó", "Ovos", "Leite", "Óleo", "Fermento"],
+    "modo_preparo": [
+      "Pré-aqueça o forno a 180°C.",
+      "Em uma tigela, misture os ingredientes secos: farinha, açúcar, chocolate em pó e fermento.",
+      "Em outra tigela, bata os ovos e adicione o leite e o óleo.",
+      "Despeje a mistura líquida sobre os ingredientes secos e mexa até obter uma massa homogênea.",
+      "Despeje a massa em uma forma untada e enfarinhada.",
+      "Asse por aproximadamente 35 minutos, ou até que um palito inserido no centro saia limpo."
+    ]
   },
   {
     "id": 2,
     "titulo": "Lasanha à Bolonhesa",
     "thumbnail": "assets/img/lasanha.jpg",
+    "descricao": "Uma clássica lasanha à bolonhesa com muito queijo e um molho suculento.",
     "tags": ["massa", "carne", "salgado"],
-    "tempo": "90 min"
+    "resumo": {
+      "tempo": "90 min",
+      "pessoas": "6 porções",
+      "nivel": "Médio"
+    },
+    "ingredientes": ["Massa de lasanha", "Carne moída", "Molho de tomate", "Queijo mussarela", "Presunto", "Cebola", "Alho"],
+    "modo_preparo": [
+      "Cozinhe a massa da lasanha conforme as instruções da embalagem.",
+      "Refogue o alho e a cebola, adicione a carne moída e cozinhe até dourar.",
+      "Adicione o molho de tomate à carne e deixe cozinhar por alguns minutos.",
+      "Em um refratário, monte a lasanha alternando camadas de molho, massa, presunto e queijo.",
+      "Repita as camadas até preencher o refratário, finalizando com uma camada de queijo.",
+      "Leve ao forno pré-aquecido a 200°C por cerca de 30 minutos, ou até o queijo gratinar."
+    ]
   },
   {
     "id": 3,
     "titulo": "Salada Caesar",
     "thumbnail": "assets/img/salada.jpg",
+    "descricao": "Uma salada Caesar refrescante e completa, ideal para uma refeição leve.",
     "tags": ["salada", "leve", "saudável"],
-    "tempo": "20 min"
+    "resumo": {
+      "tempo": "20 min",
+      "pessoas": "2 porções",
+      "nivel": "Fácil"
+    },
+    "ingredientes": ["Alface romana", "Frango grelhado", "Croutons", "Queijo parmesão", "Molho Caesar"],
+    "modo_preparo": [
+      "Lave e seque bem as folhas de alface.",
+      "Corte o frango grelhado em tiras.",
+      "Em uma saladeira, misture a alface, o frango e os croutons.",
+      "Regue com o molho Caesar e misture delicadamente.",
+      "Finalize com queijo parmesão ralado por cima e sirva imediatamente."
+    ]
   }
 ]

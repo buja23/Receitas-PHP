@@ -27,10 +27,10 @@
                 if ($busca === '' || strpos(strtolower($receita['titulo']), $busca) !== false){
                     //exibir receitas
 
-                    //delahe.php no 
+                    
                     echo '<a href="detalhe.php?id=' . $receita['id'] . '" class="receita-card">';
                     echo '<img src="' . htmlspecialchars($receita['thumbnail']) . '" alt="' . htmlspecialchars($receita['titulo']) . '">';
-                    echo '<div class="receita-card-content">'; // Novo container
+                    echo '<div class="receita-card-content">'; // novo container
                     echo '<h2>' . htmlspecialchars($receita['titulo']) . '</h2>';
                     echo '<div class="tags">';
                     foreach ($receita['tags'] as $tag) {
@@ -38,19 +38,13 @@
                     }
                     echo '</div>';
                     echo '<p class="tempo-preparo">' . htmlspecialchars($receita['tempo']) . '</p>';
-                    echo '</div>'; // Fim do novo container
+                    echo '</div>'; // Fim novo container
                     echo '</a>';
                 }
             }
 
         }
-
-
-
-
         ?>
-
-
 
 </body>
 </html>
