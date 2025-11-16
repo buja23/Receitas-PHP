@@ -1,20 +1,49 @@
-version: '3.8'
-
 services:
+  # Serviço da Aplicação PHP
   web:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: receitas-php
+    container_name: receitas-php-web
     ports:
       - "8000:80"
     volumes:
       - .:/var/www/html
-    environment:
-      - PHP_DATE_TIMEZONE=America/Sao_Paulo
+    # Carrega as variáveis de ambiente do arquivo específico para o Docker
+    env_file: .env.docker
+    # Garante que o serviço 'web' só inicie depois que o 'db' estiver pronto
+    depends_on:
+      db:
+        condition: service_healthy
     networks:
       - receitas-network
+
+  # Serviço do Banco de Dados MySQL
+  db:
+    image: mysql:8.0
+    container_name: receitas-php-db
+    restart: always
+    environment:
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASS}
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ./mysql-init:/docker-entrypoint-initdb.d
+    networks:
+      - receitas-network
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      timeout: 20s
+      retries: 10
+
+     
 
 networks:
   receitas-network:
     driver: bridge
+
+volumes:
+  mysql-data:
+    driver: local

@@ -1,0 +1,7 @@
+{
+    "name": "seu-usuario/receitas-php",
+    "description": "Um projeto simples de receitas em PHP.",
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
